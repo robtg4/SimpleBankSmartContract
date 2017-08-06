@@ -1,0 +1,110 @@
+{
+  "contract_name": "SimpleBank",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "withdrawAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "name": "remainingBal",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "balance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "enroll",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": false,
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "accountAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogDepositMade",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b335b505b6102d4806100236000396000f3006060604052361561006a5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632e1a7d4d81146100825780638da5cb5b146100aa578063b69ef8a8146100d9578063b6b55f25146100fe578063e65f2a7e14610126575b341561007557600080fd5b6100805b600080fd5b565b005b341561008d57600080fd5b61009860043561014b565b60405190815260200160405180910390f35b34156100b557600080fd5b6100bd6101d4565b604051600160a060020a03909116815260200160405180910390f35b34156100e457600080fd5b6100986101e3565b60405190815260200160405180910390f35b341561010957600080fd5b610098600435610200565b60405190815260200160405180910390f35b341561013157600080fd5b610098610285565b60405190815260200160405180910390f35b600160a060020a0333166000908152602081905260408120548290106101b357600160a060020a033316600081815260208190526040908190208054859003905583156108fc0290849051600060405180830381858888f1935050505015156101b357600080fd5b5b50600160a060020a0333166000908152602081905260409020545b919050565b600154600160a060020a031681565b600160a060020a0333166000908152602081905260409020545b90565b33600160a060020a03811660009081526020819052604080822080548501905590917fa8126f7572bb1fdeae5b5aa9ec126438b91f658a07873f009d041ae690f3a19391849051600160a060020a03909216825260208201526040908101905180910390a150600160a060020a0333166000908152602081905260409020545b919050565b600160a060020a03331660009081526020819052604090206103e8908190555b905600a165627a7a7230582068f54ab065fcdf6e279e9497408a64469352db17ac36e9a4ae76809f02d368900029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1501986196091
+}
